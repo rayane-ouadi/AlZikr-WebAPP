@@ -1,12 +1,12 @@
 @font-face {
     font-family: main-font;
-    src: url(src/fonts/IBMPlexSans.ttf);
+    src: url(Pages/src/fonts/IBMPlexSans.ttf);
 } @font-face {
     font-family: q-font;
-    src: url(src/fonts/Al_Majeed.ttf);
+    src: url(Pages/src/fonts/Al_Majeed.ttf);
 } @font-face {
     font-family: qE-font;
-    src: url(src/fonts/IbarraRealNova.ttf);
+    src: url(Pages/src/fonts/IbarraRealNova.ttf);
 }
 
 :root{
@@ -87,9 +87,6 @@ body{
     font: 16px;
 }
 
-
-
-
 footer{
     color: var(--main-color);
     width: 100%;
@@ -97,5 +94,4 @@ footer{
     text-align: center;
     font-size: 10px;
 }
-
 }
