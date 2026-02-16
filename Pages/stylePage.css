@@ -90,6 +90,21 @@ button:active{
     font-family: main-font;
 }
 
+.typer{
+    width: 90%;
+    height: 50px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    background-color: var(--main-color);    
+    color: var(--background-color);
+    font-family: main-font;
+    border-radius: 20px;
+    text-align: center;
+} .typer p{
+    font-family: main-font;
+    font-weight: 500;
+}
+
 
 .Zikr{
     border-radius: 50px;

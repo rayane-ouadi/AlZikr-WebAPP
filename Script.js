@@ -1,9 +1,7 @@
-const btn = document.getElementById('counterZikr');
-
-
-btn.addEventListener('click', function dec(){
-    let span = document.getElementById('displayCounter');
-    span.textContent = Number(span.textContent) - 1;
-
-    
-})
+function dec(btn) {
+    const span = btn.querySelector('.displayCounter');
+    const current = Number(span.textContent);
+    if (current > 0) {
+        span.textContent = current - 1;
+    }
+}
