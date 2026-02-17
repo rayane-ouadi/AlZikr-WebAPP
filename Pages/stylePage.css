@@ -1,6 +1,6 @@
 @font-face {
     font-family: main-font;
-    src: url(src/fonts/IBMPlexSans.ttf);
+    src: url(../IBMPlexSans.ttf);
 } @font-face {
     font-family: q-font;
     src: url(src/fonts/Al_Majeed.ttf);
@@ -35,9 +35,9 @@ header{
     display: flex;
     align-items: center;
     border-bottom-right-radius: 50px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
 } p{
     padding-left: 10px;
+    font-family: main-font;
 }
 
 
