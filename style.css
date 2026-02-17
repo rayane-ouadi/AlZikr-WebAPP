@@ -7,6 +7,9 @@
 } @font-face {
     font-family: qE-font;
     src: url(Pages/src/fonts/IbarraRealNova.ttf);
+} @font-face {
+    font-family: main-fontAr;
+    src: url(Pages/src/fonts/IBMPlexSansArabic-Medium.ttf);
 }
 
 :root{
@@ -17,6 +20,10 @@
 /*Main Page*/
 
 @media (max-width: 1000px) {
+
+*{
+        text-decoration: none;
+}
 
 body{
     margin: 0; padding: 0;
@@ -54,6 +61,36 @@ body{
     padding-left: 15px;
 }
 
+.randomZikr{
+    text-align: center;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -50px;
+}
+
+.randomZikrBtn{
+    width: 90%;
+    height: 60px;
+    border-radius: 50px;
+    border: none;
+    background-color: var(--main-color);
+    color: var(--background-color);
+    font-family: main-fontAr;
+    transition: all 0.5s ease;
+}
+
+.randomZikrBtn:active{
+    border-radius: 50px;
+    border: var(--background-color) 2px solid;
+    transform: scaleY(1.2);
+    background-color: var(--background-color);
+    color: var(--main-color);
+}
+
+
 .zikrNow{
     background-color: var(--main-color);
     width: 60%; height: 50px;
@@ -62,7 +99,10 @@ body{
     display: flex;
     justify-self: flex-end;
     justify-content: center;
+    align-items: center;
     margin-bottom: 50px;
+} .zikrNow p{
+    padding: 10px 10px 20px 30px;
 }
 
 .azkarCont{
