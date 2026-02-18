@@ -24,9 +24,6 @@ function zikrNowSys(){
     } else if (currentHour > 12){
         zikrNowCont.textContent = 'Time For Evening Azkar'
         link.href = "Pages/Evening.html"
-    } else if(currentHour > 20){
-        zikrNowCont.textContent = 'Time Sleep Azkar'
-        link.href = "Pages/Sleep.html"
     }
 }
 

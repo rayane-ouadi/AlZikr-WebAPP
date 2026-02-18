@@ -22,6 +22,9 @@ body{
     margin: 0; padding: 0;
     background-color: var(--background-color);
     font-family: main-font;
+    -webkit-user-select: none;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
 }
 
 header{
