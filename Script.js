@@ -41,14 +41,5 @@ function setSize(name){
     localStorage.setItem("fontSize", name)
 }
 
-let tranOp = document.getElementById('tranOp')
-let enTran = document.querySelector('.en-Translation')
-tranOp.addEventListener("change", 
-function (){
-    enTran.style.display = tranOp.checked ? "block" : "none";
-    localStorage.setItem("checkState", tranOp.checked)
-})
-
-
 
 zikrNowSys()
