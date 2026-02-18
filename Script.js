@@ -16,9 +16,10 @@ let zikrNowCont = document.getElementById('zikrNow');
 const now = new Date();
 let currentHour = now.getHours();
 let link = document.getElementById('link');
+
 function zikrNowSys(){
     if(currentHour <= 12){
-        zikrNowCont.textContent = 'Time For Morning Azkar'
+        zikrNowCont.textContent = "Time For Morning Azkar"
         link.href = "Pages/Morning.html"
     } else if (currentHour > 12){
         zikrNowCont.textContent = 'Time For Evening Azkar'
@@ -28,5 +29,29 @@ function zikrNowSys(){
         link.href = "Pages/Sleep.html"
     }
 }
+
+const saved = localStorage.getItem("theme") || "azmor";
+document.documentElement.setAttribute("data-theme", saved)
+function setTheme(name){
+    document.documentElement.setAttribute("data-theme", name);
+    localStorage.setItem("theme", name)
+}
+
+const savedSize = localStorage.getItem("fontSize") || "azmor";
+document.documentElement.setAttribute("data-fontS", saved)
+function setSize(name){
+    document.documentElement.setAttribute("data-fsize", name);
+    localStorage.setItem("fontSize", name)
+}
+
+let tranOp = document.getElementById('tranOp')
+let enTran = document.querySelector('.en-Translation')
+tranOp.addEventListener("change", 
+function (){
+    enTran.style.display = tranOp.checked ? "block" : "none";
+    localStorage.setItem("checkState", tranOp.checked)
+})
+
+
 
 zikrNowSys()

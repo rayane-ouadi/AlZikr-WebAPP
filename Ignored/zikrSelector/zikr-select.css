@@ -12,10 +12,6 @@
     src: url(../src/fonts/IBMPlexSansArabic-Medium.ttf);
 }
 
-:root{
-    --main-color: #48530D;
-    --background-color: #FFEAAC;
-}
 @media (max-width: 768px) {
 
 body{
@@ -65,8 +61,9 @@ button{
 hr{
     margin-top: 10px; margin-bottom: 15px;
     width: 50%;
-    border: solid 0.5px #48530d2f;
+    border: solid 0.5px var(--main-color);
     border-radius: 20px;
+    opacity: 10%;
 }
 
 

@@ -1,0 +1,21 @@
+[data-theme="azmor"]{
+    --main-color: #48530D;
+    --background-color: #FFEAAC;
+}
+
+[data-theme="turab"]{
+    --main-color: #53320d;
+    --background-color: #FFEAAC;
+}
+
+[data-theme="lvhar"]{
+    --main-color: #0d5344;
+    --background-color: #ffffff;
+}
+
+[data-theme="okhti"]{
+    --main-color: #9e1697;
+    --background-color: #ffacea;
+}
+
+

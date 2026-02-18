@@ -12,12 +12,7 @@
     src: url(Pages/src/fonts/IBMPlexSansArabic-Medium.ttf);
 }
 
-:root{
-    --main-color: #48530D;
-    --background-color: #FFEAAC;
-}
 
-/*Main Page*/
 
 @media (max-width: 1000px) {
 
@@ -25,10 +20,25 @@
         text-decoration: none;
 }
 
+header{
+    background-color: var(--main-color);
+    color: var(--background-color);
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    border-bottom-right-radius: 50px;
+} p{
+    padding-left: 10px;
+    font-family: main-font;
+}
+
+
 body{
     margin: 0; padding: 0;
     background-color: var(--background-color);
     font-family: main-font;
+    transition: all 1s ease;
 }
 
 .top{
@@ -139,6 +149,46 @@ footer{
     text-align: center;
     font-size: 10px;
 }
+
+
+.themes{
+    display: flex;
+    justify-content: center;
+}
+
+.btnTheme{
+    width: 23%;
+    height: 200px;
+    background: none;
+    border: none;
+    justify-content: center;
+    align-content: center;
+    transition: all 0.5s ease;
+} .themes .btnTheme .imgTheme{
+    width: 80px;
+}
+
+.btnTheme:active{
+    background-color: var(--main-color);
+    border-radius: 20px;
+    color: white;
+}
+
+.info{
+    text-align: center;
+} .info img{
+    width: 150px; height: 150px;
+    border-radius: 100px;
+
+} 
+.info h2{
+    font-size: 50px;
+    color: var(--main-color);
+} 
+ .info p {
+    font-family: monospace;
+}
+
 }
 
 @media (max-width: 405px) {

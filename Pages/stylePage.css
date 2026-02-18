@@ -1,6 +1,6 @@
 @font-face {
     font-family: main-font;
-    src: url(../IBMPlexSans.ttf);
+    src: url(src/fonts/IBMPlexSans.ttf);
 } @font-face {
     font-family: q-font;
     src: url(src/fonts/Al_Majeed.ttf);
@@ -12,10 +12,7 @@
     src: url(src/fonts/IBMPlexSansArabic-Medium.ttf);
 }
 
-:root{
-    --main-color: #48530D;
-    --background-color: #FFEAAC;
-}
+
 
 /*Main Page*/
 
